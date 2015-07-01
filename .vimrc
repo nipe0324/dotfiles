@@ -4,23 +4,25 @@
 set nocompatible  " vi互換モードをやめる
 
 if has('vim_starting')
-  set nocompatible
-
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 
-NeoBundleFetch 'Shougo/neobundle.vim'
+" 一般
+" ---------------------------------
+NeoBundleFetch 'Shougo/neobundle.vim'  " プラグイン管理
+NeoBundle 'scrooloose/nerdtree'        " ディレクトリをツリー表示する
+NeoBundle 'vim-scripts/AnsiEsc.vim'    " ログファイルを色付けしてくれる
 
-" ファイルオープンを便利に
-NeoBundle 'Shougo/unite.vim'
-" Unite.vimで最新使ったファイルを表示できるようにする
-NeoBundle 'Shougo/neomru.vim'
-" ディレクトリをツリー表示する
-NeoBundle 'scrooloose/nerdtree'
+" プログラミング
+" --------------------------------
+NeoBundle 'tomtom/tcomment_vim'             " コメントON/OFF(Shift+V -> Ctrl+--)
+NeoBundle 'tpope/vim-surround'              " シングルコーテーションとダブルコーテーションの入れ替え等
+NeoBundle 'nathanaelkane/vim-indent-guides' " インデントに色をつけてわかりやすくする
 
-
+NeoBundle 'tpope/vim-rails'                 " Rails向けコマンド
+NeoBundle 'tpope/vim-endwise'               " Ruby向けにendを自動挿入してくれる
 
 call neobundle#end()
 
@@ -44,5 +46,9 @@ set tabstop=2                   " タブ幅をスペース数
 " キーマップ
 """"""""""""""""""""""""""""""""""""
 
+" Indent Guides Enable
+let g:indent_guides_enable_on_vim_startup = 1 "  vim起動時にvim-indent-guidesをonにする
+
+" NERDTREE
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 

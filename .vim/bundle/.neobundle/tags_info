@@ -1,4 +1,8 @@
+AnsiEsc.vim
 neobundle.vim
-neomru.vim
 nerdtree
-unite.vim
+tcomment_vim
+vim-endwise
+vim-indent-guides
+vim-rails
+vim-surround
