@@ -1,1 +1,0 @@
-/Users/nipe/.zprezto/runcoms/zshrc
