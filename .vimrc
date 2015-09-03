@@ -42,6 +42,7 @@ set backspace=indent,eol,start  " バックスペースキーの挙動
 set shiftwidth=2                " 自動インデントの幅
 set tabstop=2                   " タブ幅をスペース数
 set noswapfile                  " スワップファイルを作らない
+set syntax on                   " ハイライトを有効化
 
 """"""""""""""""""""""""""""""""""""
 " キーマップ
