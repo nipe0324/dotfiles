@@ -13,13 +13,14 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " ---------------------------------
 NeoBundleFetch 'Shougo/neobundle.vim'  " プラグイン管理
 NeoBundle 'scrooloose/nerdtree'        " ディレクトリをツリー表示する
-NeoBundle 'vim-scripts/AnsiEsc.vim'    " ログファイルを色付けしてくれる
+"NeoBundle 'vim-scripts/AnsiEsc.vim'    " ログファイルを色付けしてくれる
+NeoBundle "ctrlpvim/ctrlp.vim"         " Go to anything
 
 " プログラミング
 " --------------------------------
-NeoBundle 'tomtom/tcomment_vim'             " コメントON/OFF(Shift+V -> Ctrl+--)
-NeoBundle 'tpope/vim-surround'              " シングルコーテーションとダブルコーテーションの入れ替え等
-NeoBundle 'nathanaelkane/vim-indent-guides' " インデントに色をつけてわかりやすくする
+"NeoBundle 'tomtom/tcomment_vim'             " コメントON/OFF(Shift+V -> Ctrl+--)
+"NeoBundle 'tpope/vim-surround'              " シングルコーテーションとダブルコーテーションの入れ替え等
+"NeoBundle 'nathanaelkane/vim-indent-guides' " インデントに色をつけてわかりやすくする
 
 NeoBundle 'tpope/vim-rails'                 " Rails向けコマンド
 NeoBundle 'tpope/vim-endwise'               " Ruby向けにendを自動挿入してくれる
@@ -37,10 +38,10 @@ NeoBundleCheck
 """""""""""""""""""""""""""""""""""""
 set number                      " 行番号を表示する
 set backspace=indent,eol,start  " バックスペースキーの挙動
-set autoindent                  " 自動インデント
+"set autoindent                  " 自動インデント
 set shiftwidth=2                " 自動インデントの幅
 set tabstop=2                   " タブ幅をスペース数
-
+set noswapfile                  " スワップファイルを作らない
 
 """"""""""""""""""""""""""""""""""""
 " キーマップ

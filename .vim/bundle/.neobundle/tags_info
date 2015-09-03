@@ -1,8 +1,5 @@
-AnsiEsc.vim
+ctrlp.vim
 neobundle.vim
 nerdtree
-tcomment_vim
 vim-endwise
-vim-indent-guides
 vim-rails
-vim-surround

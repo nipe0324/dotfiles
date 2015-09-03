@@ -1,8 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/yanagi/work/api_docs_tests'
-let g:netrw_dirhist_2='/Users/yanagi/work/api_docs_tests/app'
-let g:netrw_dirhist_3='/Users/yanagi/work/api_docs_tests/app/controllers'
-let g:netrw_dirhist_4='/Users/yanagi/work/api_docs_tests'
-let g:netrw_dirhist_5='/Users/yanagi/work/api_docs_tests/app'
-let g:netrw_dirhist_6='/Users/yanagi/work/api_docs_tests/app/controllers'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/yanagi/work/leancanvas/config'
+let g:netrw_dirhist_2='/Users/yanagi/work/leancanvas'
+let g:netrw_dirhist_3='/Users/yanagi/work/leancanvas/config'
+let g:netrw_dirhist_4='/Users/yanagi/Project/3.global/bm_dev_chef/nfs_sync_dir/php_apps'
+let g:netrw_dirhist_5='/Users/yanagi/work/imitate_refactoring_rails'
