@@ -21,5 +21,5 @@ ln -sf ~/dotfiles/.vimrc ~/.vimrc
 #ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
 # tmux
-rm -f ~/dotfiles/.tmux.conf
-ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+#rm -f ~/dotfiles/.tmux.conf
+#ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
