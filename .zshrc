@@ -11,15 +11,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
-# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# sublime
+# Sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin":$PATH
 
 
+# cdls
+cdls ()
+{
+  \cd "$@" && ls
+}
+alias cd="cdls"
 
 # vcs_info 設定
 RPROMPT=""
